@@ -55,6 +55,7 @@ textarea {
 }
 
 .btns {
+    display: inline-flex;
     text-align: center;
    
 }
