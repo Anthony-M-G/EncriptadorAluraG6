@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador Alura</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <header>ENCRIPTADOR DE TEXTO ALURA</header>
-        <img src="img/Logo.jpg" alt="logo" id="img">
-    </div>
+    <header>
+        <img src="img/Logo.jpg" alt="logo">
+    </header>
     <main>
-        <div class="conten-texts">
-            <textarea placeholder="Ingresa el texto a encriptar" id="texto_entrada" cols="30" rows="10"></textarea>
-            <textarea placeholder="Ningún texto encriptado" id="texto_salida" cols="30" rows="10"></textarea>
-        </div>  
-        <div class="btns">
-            <input onclick="encriptar()" type="button" value="Encriptar">
-            <input onclick="desencriptar()" type="button" value="Desencriptar">
-            <input onclick="copiar()" type="button" value="Copiar">
-        </div>  
+        <section class="seccion1">
+            <div class="contenedor-texto">
+                <textarea name=texto_a_encriptar" id="texto_entrada" cols="60" rows="20" placeholder="  Ingrese el texto a encriptar"></textarea>
+            </div>
+            <div class="btns">
+                <input type="button" value="Encriptar" onclick="encriptar()" class="btn">
+                <input type="button" value="Desencriptar" onclick="desencriptar()" class="btn">
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedor-salida">
+               
+                <textarea name="texto_desencriptado" id="texto_salida" cols="20" rows="20" placeholder="  Ningún texto encontrado"></textarea>
+                    <div class="btn-copiar">
+                    <input type="button" value="Copiar" onclick="copiar()" class="btn">
+                </div>
+               
+                
+            </div>
+
+        </section>
+
+
+
     </main>
-    <script src="functions.js"></script>
     <footer>Creado por @Anthony / Alura Latam</footer>
+    <script src="functions.js"></script>
+    
 </body>
 </html>

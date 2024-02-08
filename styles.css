@@ -1,89 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* styles.css */
+body{
+    background-image: url("img/encriptar_1.jpg");
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("img/eiYxD9b.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    
-}
-
-.header {
-    color: #fff;
-    text-align: center;
-    padding: 7px;
-    position: fixed;
-    top: 0;
-    left: 0;
+header {
     width: 100%;
-    z-index: 1;
-}
-#img{
-    width: 50px;
-    margin-left: 20px;
-    
+    height: 100px;
 }
 
 main {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.conten-texts {
-    margin-bottom: 20px;
+.seccion1 {
+    margin-left: 4%;
+    margin-bottom: 50px;
+    width: calc(50% - 8%);
 }
 
-textarea {
-    width: 100%;
+
+.seccion1 .contenedor-texto #texto_entrada {
+  
+    font-weight: bold;
+    border-radius: 20px;
+   
+    width: calc(100% - 20px);
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    
+    resize: vertical;
+    opacity: 30%;
+    border: none;
 }
 
 .btns {
-    display: inline-flex;
-    text-align: center;
-   
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-input[type="button"] {
+.btn {
+    border-radius: 8px;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #333;
+    margin: 0 5px;
+    background-color: #063466;
     color: #fff;
     border: none;
-    border-radius: 4px;
-    margin-right: 10px;
+    cursor: pointer;
+    opacity: 80%;
+}
+::placeholder{
+    color: rgb(11, 5, 57);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.seccion2 {
+    margin-right: 4%;
+    margin-bottom: 30px;
+    width: calc(50% - 8%);
 }
 
-input[type="button"]:hover {
-    background-color: #555;
+.seccion2 .contenedor-salida #texto_salida {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: calc(100% - 20px);
+    padding: 10px;
+    resize: vertical;
+    opacity: 30%;
+    
+}
+
+.btn-copiar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
+    
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 20px;
     width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
-@media screen and (max-width:480px){
- 
-}
+
