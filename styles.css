@@ -1,11 +1,12 @@
 /* styles.css */
 body{
-    background-image: url("img/encriptar_1.jpg");
+   background-image: url("img/eiYxD9b.jpg");
 }
 
 header {
     width: 100%;
     height: 100px;
+   
 }
 
 main {
@@ -15,22 +16,42 @@ main {
     flex-wrap: wrap;
 }
 
+
+::placeholder{
+    color: rgb(11, 5, 57);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    
+}
+
 .seccion1 {
     margin-left: 4%;
     margin-bottom: 50px;
     width: calc(50% - 8%);
 }
+p{
+    
+    color: aliceblue;
+    font-size: x-large;
+    margin-bottom: 3px;
+}
 
+#texto_entrada{
+    
+    opacity: 30%;
+    font-size: xx-large;
+    resize: none;
+    
+}
 
 .seccion1 .contenedor-texto #texto_entrada {
   
-    font-weight: bold;
+    font-weight: bolder;
     border-radius: 20px;
-   
     width: calc(100% - 20px);
     padding: 10px;
-    resize: vertical;
-    opacity: 30%;
+    color: black;
     border: none;
 }
 
@@ -50,16 +71,16 @@ main {
     cursor: pointer;
     opacity: 80%;
 }
-::placeholder{
-    color: rgb(11, 5, 57);
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-}
+
 .seccion2 {
+    margin-top: 25px;
     margin-right: 4%;
     margin-bottom: 30px;
     width: calc(50% - 8%);
+}
+#texto_salida{
+    font-weight: bolder;
+    opacity: 30%;
 }
 
 .seccion2 .contenedor-salida #texto_salida {
@@ -67,8 +88,9 @@ main {
     border: 1px solid #ccc;
     width: calc(100% - 20px);
     padding: 10px;
-    resize: vertical;
-    opacity: 30%;
+    resize: none;
+    font-size: xx-large
+  
     
 }
 
@@ -80,7 +102,7 @@ main {
 }
 
 footer {
-    
+   color: #ccc;
     font-size: x-large;
     font-weight: bold;
     padding-top: 20px;

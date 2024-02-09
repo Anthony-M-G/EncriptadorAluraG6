@@ -11,6 +11,7 @@ function llamadaElementoID(id) { // Función para traer cada elemento por su id 
 }
 
 function encriptar(){
+    
     let result=[]; //Lista vacia donde se almacenan los valores cambiados
     listaDePalabra=entrada_texto.value.toLowerCase().split(""); //Divido la palabra en una lista
     for(i=0;i<listaDePalabra.length;i++){
