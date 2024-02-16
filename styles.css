@@ -22,7 +22,7 @@ main {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
-    
+   
 }
 
 .seccion1 {
@@ -53,6 +53,9 @@ p{
     padding: 8px;
     color: white;
     border: none;
+    opacity: 60%;
+    
+    
 }
 
 .btns {
@@ -96,6 +99,10 @@ p{
     background-color: #001b38;
     font-weight: bolder;
     color: #fff;
+    opacity: 70%;
+    font-size: medium;
+    
+  
  
    
 }
