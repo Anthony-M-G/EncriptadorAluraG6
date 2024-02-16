@@ -18,7 +18,7 @@ main {
 
 
 ::placeholder{
-    color: rgb(11, 5, 57);
+    color: rgb(77, 61, 199);
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
@@ -39,33 +39,47 @@ p{
 
 #texto_entrada{
     
-    opacity: 30%;
+    
     font-size: xx-large;
     resize: none;
     
 }
 
 .seccion1 .contenedor-texto #texto_entrada {
-  
+    background-color: #001b38;
     font-weight: bolder;
     border-radius: 20px;
     width: calc(100% - 20px);
-    padding: 10px;
-    color: black;
+    padding: 8px;
+    color: white;
     border: none;
 }
 
 .btns {
+   
     display: flex;
     justify-content: center;
     margin-top: 10px;
+  
 }
 
-.btn {
+.btnE{
+    font-size: medium;
     border-radius: 8px;
     padding: 10px 20px;
     margin: 0 5px;
-    background-color: #063466;
+    background-color:rgb(4, 111, 111);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 80%;
+}
+.btnD{
+    font-size: medium;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color:rgb(5, 90, 63);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -79,19 +93,32 @@ p{
     width: calc(50% - 8%);
 }
 #texto_salida{
+    background-color: #001b38;
     font-weight: bolder;
-    opacity: 30%;
+    color: #fff;
+ 
+   
 }
 
 .seccion2 .contenedor-salida #texto_salida {
     border-radius: 20px;
     border: 1px solid #ccc;
     width: calc(100% - 20px);
-    padding: 10px;
+    padding: 8px;
     resize: none;
     font-size: xx-large
   
     
+}
+.btnC{
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color:rgb(92, 4, 33);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 80%;
 }
 
 .btn-copiar {
@@ -101,9 +128,10 @@ p{
     
 }
 
+
 footer {
    color: #ccc;
-    font-size: x-large;
+   
     font-weight: bold;
     padding-top: 20px;
     width: 100%;
