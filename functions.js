@@ -33,11 +33,13 @@ function encriptar(){
         case "u":
             result.push("ufat");
             break;
+        case " ":
+            result.push(" "); // Si no es ninguna vocal se añade la misma letra en la posicion correspondiente
+            break;
 
         default:
-            parrafo.innerHTML="¡No se aceptan caractéres especiales!";
-            result.push(listaDePalabra[i]); // Si no es ninguna vocal se añade la misma letra en la posicion correspondiente
-            break;
+            result.push(listaDePalabra[i])
+            break
        }
     }
     limpiarPantalla(); 
