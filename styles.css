@@ -30,41 +30,47 @@ main {
     margin-bottom: 50px;
     width: calc(50% - 8%);
 }
-p{
-    
-    color: aliceblue;
+p{  
+    display: inline-block;
+    color: rgb(160, 7, 48);
     font-size: x-large;
     margin-bottom: 3px;
 }
 
 #texto_entrada{
-    
-    
     font-size: xx-large;
     resize: none;
+
     
 }
 
+
 .seccion1 .contenedor-texto #texto_entrada {
     background-color: #001b38;
-    font-weight: bolder;
+    font-weight: bold;
     border-radius: 20px;
     width: calc(100% - 20px);
     padding: 8px;
     color: white;
-    border: none;
     opacity: 60%;
+    padding: 8px;
     
     
+    
+}
+#texto_entrada:hover,#texto_salida:hover{
+    border: 5px solid rgb(140, 140, 31);
 }
 
 .btns {
    
-    display: flex;
+    display: inline-block;
     justify-content: center;
     margin-top: 10px;
+    
   
 }
+
 
 .btnE{
     font-size: medium;
@@ -78,19 +84,25 @@ p{
     opacity: 80%;
 }
 .btnD{
+    
     font-size: medium;
     border-radius: 8px;
     padding: 10px 20px;
-    margin: 0 5px;
+    margin-top: 10px;
     background-color:rgb(5, 90, 63);
     color: #fff;
     border: none;
     cursor: pointer;
     opacity: 80%;
 }
+.btnE:hover,.btnD:hover,.btnC:hover{
+    font-size: large;
+    border: 1px solid rgb(154, 122, 20);
+}
+
 
 .seccion2 {
-    margin-top: 25px;
+    
     margin-right: 4%;
     margin-bottom: 30px;
     width: calc(50% - 8%);
@@ -101,15 +113,11 @@ p{
     color: #fff;
     opacity: 70%;
     font-size: medium;
-    
-  
- 
-   
+    padding: 10px;
 }
 
 .seccion2 .contenedor-salida #texto_salida {
     border-radius: 20px;
-    border: 1px solid #ccc;
     width: calc(100% - 20px);
     padding: 8px;
     resize: none;
@@ -118,14 +126,16 @@ p{
     
 }
 .btnC{
+    font-size: medium;
     border-radius: 8px;
     padding: 10px 20px;
-    margin: 0 5px;
+    
     background-color:rgb(92, 4, 33);
     color: #fff;
     border: none;
     cursor: pointer;
     opacity: 80%;
+    margin-top: 12px;
 }
 
 .btn-copiar {

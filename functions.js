@@ -15,6 +15,8 @@ function encriptar(){
     let result=[]; //Lista vacia donde se almacenan los valores cambiados
     listaDePalabra=entrada_texto.value.toLowerCase().split(""); //Divido la palabra en una lista
     for(i=0;i<listaDePalabra.length;i++){
+        
+        parrafo.innerHTML="";
        switch (listaDePalabra[i]) { //Sentencia switch para los casos en los que aprezca una vocas
         case "a":                   // Dependiendo de la vocal agrego el cambio a la lista result
             result.push("ai");
@@ -33,16 +35,19 @@ function encriptar(){
             break;
 
         default:
+            parrafo.innerHTML="¡No se aceptan caractéres especiales!";
             result.push(listaDePalabra[i]); // Si no es ninguna vocal se añade la misma letra en la posicion correspondiente
             break;
        }
     }
     limpiarPantalla(); 
+    
     salida_texto.value=result.join("");
     return salida_texto.value;
+    
 }
 function desencriptar(){ // Funcón que actualiza la palabra a desencriptar en funciona de cada letra, asignándole el texto traido del textarea a la variable res
-
+    parrafo.innerHTML="";
     let res=entrada_texto.value.toLowerCase().replace(/ai/g,"a");
     res=res.replace(/ei/g,"e");
     res=res.replace(/imes/g,"i");
@@ -66,6 +71,8 @@ function copiar(){
 // LLamada de elementos por las funciones
 let entrada_texto=llamadaElementoID("texto_entrada");
 let salida_texto=llamadaElementoID("texto_salida");
+let parrafo=llamadaElementoID("parrafo")
+let abcdario=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z"];
 
 
 
