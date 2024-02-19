@@ -13,7 +13,7 @@ function llamadaElementoID(id) { // Función para traer cada elemento por su id 
 function encriptar(){
     
     let result=[]; //Lista vacia donde se almacenan los valores cambiados
-    if(/^[a-z ]+$/.test(entrada_texto.value)){
+    if(/^[a-z ]+$/.test(entrada_texto.value)){ // Validación de no aceptar mayúsculas ni caractéres
         listaDePalabra=entrada_texto.value.split(""); //Divido la palabra en una lista
         for(i=0;i<listaDePalabra.length;i++){
         
