@@ -22,7 +22,7 @@ function encriptar(){
             result.push("ai");
             break;
         case "e":
-            result.push("ei");
+            result.push("enter");
             break;
         case "i":
             result.push("imes");
