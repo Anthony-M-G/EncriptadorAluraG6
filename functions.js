@@ -51,7 +51,7 @@ function encriptar(){
 function desencriptar(){ // Funcón que actualiza la palabra a desencriptar en funciona de cada letra, asignándole el texto traido del textarea a la variable res
     parrafo.innerHTML="";
     let res=entrada_texto.value.toLowerCase().replace(/ai/g,"a");
-    res=res.replace(/ei/g,"e");
+    res=res.replace(/enter/g,"e");
     res=res.replace(/imes/g,"i");
     res=res.replace(/ober/g,"o");
     res=res.replace(/ufat/g,"u");
