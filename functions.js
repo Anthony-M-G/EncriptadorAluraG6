@@ -13,40 +13,45 @@ function llamadaElementoID(id) { // Función para traer cada elemento por su id 
 function encriptar(){
     
     let result=[]; //Lista vacia donde se almacenan los valores cambiados
-    listaDePalabra=entrada_texto.value.toLowerCase().split(""); //Divido la palabra en una lista
-    for(i=0;i<listaDePalabra.length;i++){
+    if(/^[a-z ]+$/.test(entrada_texto.value)){
+        listaDePalabra=entrada_texto.value.split(""); //Divido la palabra en una lista
+        for(i=0;i<listaDePalabra.length;i++){
         
-        parrafo.innerHTML="";
-       switch (listaDePalabra[i]) { //Sentencia switch para los casos en los que aprezca una vocas
-        case "a":                   // Dependiendo de la vocal agrego el cambio a la lista result
-            result.push("ai");
-            break;
-        case "e":
-            result.push("enter");
-            break;
-        case "i":
-            result.push("imes");
-            break;
-        case "o":
-            result.push("ober");
-            break;
-        case "u":
-            result.push("ufat");
-            break;
-        case " ":
-            result.push(" "); // Si no es ninguna vocal se añade la misma letra en la posicion correspondiente
-            break;
+          
+        
+            switch (listaDePalabra[i]) { //Sentencia switch para los casos en los que aprezca una vocas
+                case "a":                   // Dependiendo de la vocal agrego el cambio a la lista result
+                    result.push("ai");
+                    break;
+                case "e":
+                    result.push("enter");
+                    break;
+                case "i":
+                    result.push("imes");
+                    break;
+                case "o":
+                    result.push("ober");
+                    break;
+                case "u":
+                    result.push("ufat");
+                    break;
+                case " ":
+                    result.push(" "); // Si no es ninguna vocal se añade la misma letra en la posicion correspondiente
+                    break;
 
-        default:
-            result.push(listaDePalabra[i])
-            break
+                default:
+                    result.push(listaDePalabra[i])
+                    break
        }
-    }
+    parrafo.innerHTML="";
     limpiarPantalla(); 
-    
     salida_texto.value=result.join("");
-    return salida_texto.value;
-    
+        }
+    }
+    else{
+        salida_texto.value="";
+        parrafo.innerHTML="No se aceptan mayúsculas ni caracteres especiales";
+    }
 }
 function desencriptar(){ // Funcón que actualiza la palabra a desencriptar en funciona de cada letra, asignándole el texto traido del textarea a la variable res
     parrafo.innerHTML="";
